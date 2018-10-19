@@ -1,0 +1,11 @@
+body { 
+    background-image: url(../img/background.jpg); 
+    background-repeat: repeat; 
+
+    
+}
+
+.card-img-top {
+    -webkit-filter: sepia(0%); /* Safari 6.0 - 9.0 */
+    filter: sepia(0%);
+}

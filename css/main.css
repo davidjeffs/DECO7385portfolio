@@ -1,0 +1,664 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+
+
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+.main-container {
+    /* The image used */
+    background-image: url("../img/test.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body, html {
+    height: 100%;
+}
+
+
+
+	blockquote {
+		width: 50%;
+		font: 2.65em CallunaRegular;
+		letter-spacing: .075em;
+		padding: 45px 0 30px 25px;
+		margin: auto;
+        vertical-align:inherit;
+        text-align: center;
+		-webkit-transform: rotate(-3deg);
+		-moz-transform: rotate(-3deg);
+	}
+
+
+
+
+		blockquote:first-line {
+			font: 1.85em "Sketch Block";
+			color: #fff79e;
+		}
+
+		blockquote:first-letter {
+			font-size: 2.9em;
+			text-transform: lowercase;
+			line-height: .52em;
+			margin-right: -18px;
+			z-index: 1;
+		}
+
+		blockquote strong:first-child {
+			margin-left: 8px;
+			letter-spacing: 0;
+		}
+
+		blockquote strong:last-child {
+			font: 1.5em "Museo 700";
+            color: white;
+			text-transform: uppercase;
+			letter-spacing: 0;
+		}
+
+		blockquote em {
+			border-bottom: 2px dotted #858585;
+		}
+
+
+
+		@-moz-document url-prefix() { 
+
+			blockquote:first-letter {
+				margin-top: -29px;
+			}
+
+		}
+
+
+a {
+  -webkit-transition: .25s all;
+  transition: .25s all;
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-transition: .25s box-shadow;
+  transition: .25s box-shadow;
+  padding: 10px;
+  font-family: 'Permanent Marker', cursive;
+
+}
+
+
+.navMain li {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.2em;
+}
+
+.card-img-top {
+    -webkit-filter: sepia(75%); /* Safari 6.0 - 9.0 */
+    filter: sepia(75%);
+}
+
+.card-img-top:focus, .card-img-top:hover {
+    -webkit-filter: sepia(0%); /* Safari 6.0 - 9.0 */
+    filter: sepia(0%);
+    cursor: pointer;
+}
+
+.card:focus,
+.card:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card-inverse .card-img-overlay {
+  background-color: rgba(51, 51, 51, 0.85);
+  border-color: rgba(51, 51, 51, 0.85);
+}
+
+#card1, #tab1 {
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+}
+
+#card2, #tab2 {
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+}
+
+#card3, #tab3 {
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+}
+
+#card4, #tab4 {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+}
+
+.text-muted {
+    font-family: 'Special Elite', cursive;
+}
+
+.navMain li {
+    margin: -3em 0.5em 0 .5em;
+    padding: 3em 0.5em 0 0.5em;
+    background-color: black;
+    color: white;
+}
+
+.navMain li:hover, .navMain li:focus {
+    margin: -2em 1em 0 1em;
+    cursor: pointer;
+}
+
+.navbar-default {
+    position:fixed;
+    z-index: 5;
+    background: transparent;
+}
+
+
+
+.main-heading {
+    width: 50%;
+}
+
+.main-heading {
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(img/menu.jpg); 
+    background-repeat: repeat; 
+
+}
+
+.jumbotron {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+}
+
+.telegramHeading {
+    font-family: 'Cinzel', serif;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+.container h1 {
+    text-decoration: underline;
+        text-decoration-style: solid;
+
+}
+
+.container h1::first-letter {
+    font-size: 1.1em;
+
+}
+
+
+.invert {
+    color: white;
+    background: black;
+    height: 4em;
+    margin: auto;
+}
+
+.paper {
+    background: grey;
+    font-family: 'Special Elite', cursive;
+    padding: 0 0.5em;
+    float:left;
+    margin: 0 0.1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+#paper1 {
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+}
+
+#paper2 {
+    -webkit-transform: rotate(0.75deg);
+    -moz-transform: rotate(0.75deg);
+}
+
+#paper3 {
+    -webkit-transform: rotate(-0.5deg);
+    -moz-transform: rotate(-0.5deg);
+}
+
+ul li a {
+    cursor: pointer;
+    color:white;
+}
+
+#paper4 {
+    -webkit-transform: rotate(0.5deg);
+    -moz-transform: rotate(0.5deg);
+}
+
+#paper5 {
+    -webkit-transform: rotate(-0.75deg);
+    -moz-transform: rotate(-0.75deg);
+}
+
+#paper6 {
+    -webkit-transform: rotate(-0.5deg);
+    -moz-transform: rotate(-0.5deg);
+}
+
+.logo {
+    float: left;
+    font-family: 'Great Vibes', cursive;
+    background: white;
+    margin: 0;
+    padding: 0.25em;
+    position: inherit;
+    -webkit-transform: rotate(-0.2deg);
+    -moz-transform: rotate(-0.2deg);
+}
+
+.navbar-default .container-fluid ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+heading ul li {
+    position: fixed;
+}
+
+
+
+
+
+.heading {
+    width: 800px;
+}
+
+
+nav {
+    width: 100%;
+    display: inline-block;
+}
+
+.description {
+    width: 490;
+    display: inline-block;
+}
+
+.description p {
+    font-size: 1em;
+}
+
+.mainname p {
+    font-size: 2em;
+    margin-right: 0.06em;
+}
+
+.secondname p {
+    font-size: 2em;
+    margin-right: 0.06em;
+}
+
+.telegramHeading {
+    margin-bottom: 0;
+}
+
+.card-affects {
+    background-color: white;
+}
+
+.card-block {
+    text-align: center;
+}
+
+p {
+    float:none;
+    font-family: 'Special Elite', cursive;
+}
+
+#description h1 {
+    float:none;
+}
+
+#description p {
+    text-align: left;
+}
+
+#section1 {
+    background:white;
+    -webkit-transform: rotate(-0.2deg);
+    -moz-transform: rotate(-0.2deg);
+}
+
+#section2 {
+    background:white;
+    -webkit-transform: rotate(0.2deg);
+    -moz-transform: rotate(0.2deg);
+}
+
+
+
+/* taken from https://css-tricks.com/almanac/properties/b/box-shadow/ */
+.shadow {
+  -webkit-box-shadow: 3px 3px 5px 6px rgb(204, 204, 204, 0.7);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px rgb(204, 204, 204, 0.7);  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 0px 0px rgb(150, 150, 150, 0.7);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+
+
+.linebreak {
+    cursor:default;
+    padding: 0.5em;
+    -webkit-filter: sepia(75%); /* Safari 6.0 - 9.0 */
+    filter: sepia(75%);
+}
+
+.navSecondary, ol li {
+    font-family: 'Special Elite', cursive;
+    text-align: left;
+    
+}
+.navbar-inverse {
+    height: 1em;
+    
+}
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+.navbar.center .navbar-inner .nav {
+    float: none;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+.navbar {min-height:32px !important}
+
+.container-fluid {
+    max-width: 1280px;
+}
+
+.sectionHeading {
+    margin-top: 1em;
+    font-size: 3em;
+}
+
+
+/* code for jquery lightbox http://dimsemenov.com/plugins/magnific-popup/*/
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
+button {
+    background: none;
+    font-family: 'Special Elite', cursive;
+    border: 0.24em solid black; /* Green */
+}
+
+.us{
+    -webkit-filter: sepia(75%); /* Safari 6.0 - 9.0 */
+    filter: sepia(75%);
+}
+
+.item {
+    max-height: 280px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color:white;
+}
+
+.tabs li a{
+    color:black;
+
+}
+
+.tabs li {
+   border: 3em black;
+}
+
+.mainname {
+    font-size: 3em;
+}
+
+.headingtext {
+    margin-top: 8em;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
